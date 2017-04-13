@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:boron'
-    }
-    
-  }
+  agent any
   stages {
     stage('Build & Test') {
       steps {
